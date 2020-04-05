@@ -101,8 +101,8 @@ while True:
                 print('Congratulations! You have won the game!')
                 game_on = False
             else:
-                if full_board_check(theoard):
-                    display_board(theBoard)
+                if full_board_check(the_board):
+                    display_board(the_board)
                     print('The game is a draw!')
                     break
                 else:
@@ -111,17 +111,17 @@ while True:
         else:
             # Player2's turn.
             
-            display_board(theBoard)
-            position = player_choice(theBoard)
-            place_marker(theBoard, player2_marker, position)
+            display_board(the_board)
+            position = player_choice(the_board)
+            place_marker(the_board, player2_marker, position)
 
-            if win_check(theBoard, player2_marker):
-                display_board(theBoard)
+            if win_check(the_board, player2_marker):
+                display_board(the_board)
                 print('Player 2 has won!')
                 game_on = False
             else:
-                if full_board_check(theBoard):
-                    display_board(theBoard)
+                if full_board_check(the_board):
+                    display_board(the_board)
                     print('The game is a draw!')
                     break
                 else:
